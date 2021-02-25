@@ -74,8 +74,8 @@ def simulate(data):
             # print(incoming_street["name"], " usage:", cars_over_street[incoming_street["name"]], " total_usage:", total_usage)
             if total_usage == 0: continue
             percentage = cars_over_street[incoming_street["name"]] / total_usage
-            print(incoming_street["name"], " usage:", cars_over_street[incoming_street["name"]], " total_usage:", total_usage, "percent:", percentage)
             if percentage > 0:
+                print(incoming_street["name"], " usage:", cars_over_street[incoming_street["name"]], " total_usage:", total_usage, "percent:", percentage)
                 percentages.append(percentage)
             percentage *= constants.max_period
 
@@ -83,6 +83,8 @@ def simulate(data):
 
     print("max", np.max(percentages))
     print("min", np.min(percentages))
+    print("mean", np.mean(percentages))
+    print("median", np.median(percentages))
 
 
     print(reward)

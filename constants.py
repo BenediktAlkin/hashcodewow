@@ -1,6 +1,7 @@
-filepath = "b.txt"
+filepath = "c.txt"
 
 # a: 5
-# b:
+# b: 20 - 4,497,970
+# c:
 
 max_period = 20
